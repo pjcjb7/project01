@@ -1,0 +1,24 @@
+#body{
+    background-color: #D61355;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#c2{
+    justify-content: space-evenly;
+    display: flex;
+    text-align: center;
+}
+
+#c-2a, #c-2b{
+    background-color: #F94A29;
+    margin: 5%;
+    padding: 4vh;
+}
+
+#f1{
+    text-align: center;
+    color: #FCE22A;
+    font-weight: bold;
+    
+}
