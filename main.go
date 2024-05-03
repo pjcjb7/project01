@@ -12,7 +12,7 @@ func main() {
 	// Define a route to serve HTML content
 	r.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", gin.H{
-			"title": "Hello, Golang!",
+			"title": "Mtaani!",
 		})
 	})
 
