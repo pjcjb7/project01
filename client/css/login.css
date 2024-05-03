@@ -1,0 +1,46 @@
+#cf-1{
+    display: flex;
+    padding-top: 2%;
+    justify-content: space-evenly;
+}
+
+#c-1{
+    padding-left: 16vh;
+}
+
+#logo{
+    height: 150px;
+
+}
+#nav{
+    display: flex;
+    padding-top: 3vh;
+}
+
+#nav-link{
+    text-decoration: none;
+    color: black;
+    padding: 4vh;
+    font-size: 2.5vh;
+}
+
+#nav-link:hover{
+    color: #9336B4;
+    background-color: #ff5922d2;
+    border-radius: 5%;
+}
+
+p{
+    font-weight: bold;
+    color: black;
+    font-size: 3vh;
+}
+
+#lbl{
+    color: #FF5B22;
+}
+
+#cf-2{
+    display: flex;
+    justify-content: space-evenly;
+}
