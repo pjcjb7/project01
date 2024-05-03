@@ -20,3 +20,18 @@ function submitForm() {
 }
 //Sending form data to server using AJAX
 //Using XMLHttpRequest
+function submitForm() {
+    var formDta = new FormData(gocument.getElementById("myForm"));
+
+    fetch('/submit', {
+        method:'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data); //Server Response
+    })
+    .catch(error => {
+        console.error('Error', error)
+    });
+}

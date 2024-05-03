@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/submit", func(w http.ResponseWriter, r *http.Request)){
+	http.HandleFunc("/submit", func(w http.ResponseWriter, r *http.Request){
 		err := r.ParseForm()
 		if err != nil {
 			http.Error(w, "Failed to parse Form data", http.StatusInternalServerError)
@@ -22,7 +22,7 @@ func main() {
 		password = r.Form.Get("password")
 
 		//Write data to cvs File (Excel -Com[patible)
-		file,err :=os.OpenFile("form_data.cvs", os.0_APPEND|os.0_CREATE|os.0_WRONLY, 0644)
+		file,err :=os.OpenFile("form_data.cvs" , os.0_APPEND|os.0_CREATE|os.0_WRONLY, 0644)
 		if err != nil {
 			http.Error(w, "Failed to open file", http.StatusIntenalServerError)
 			return
@@ -37,5 +37,7 @@ func main() {
 			http.Error(w, "Failed to write data to file", http.StatusInternalServerError)
 			return
 		}
-	}
+
+	})
+	http.ListenAndServe(":8080", nil)
 }
