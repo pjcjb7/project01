@@ -8,30 +8,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <header class="header" id="header">
-        <div class="container-fluid" id="c1">
-            <div class="container" id="c-1a">
-                    <h1 id="h1">LOGO</h1>
+
+    <header class="header">
+        <a hrf="#" class="logo"> Bookins.com<span class="animate" style="--i:1;"></span></a>
+
+        <nav class="navbar">
+            <a href="#home"class="active">Home</a>
+            <a href="#server">Server</a>
+            <a href="#location">Location</a>
+            <a href="#support">Support</a>
+            <a href="#checkout">Checkout</a>
+            <a href="#account">Account</a>
+
+            <span class="active-navbar"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>    
+    </header>
+
+    <!--home section design-->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Welcome To Bookins.com<span class="animate" style="--i:2"></span></h1>
+                <div class="text-animate">
+                    <h3>Best Hostel Booking Site Ever !</h3>
+                    <span class="animate" style="--i:3"></span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Quos culpa, ducimus 
+                    soluta inventore rem excepturi sint! 
+                    Necessitatibus ea ipsam minus? Eaque 
+                    nisi ipsa dolorem, beatae amet 
+                    debitis eius aspernatur assumenda?</p>
+    
+               <div class="wrapper">
+            <div class="collapsible">
+                <input type="checkbox" id="collapsible-head">
+                <label for="collapsible-head">Where To Find Us ?</label>
+
+                <div class="collapsible-text">
+                    <h2>Our Location !</h2>
+                    <P>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Vero neque eos voluptatibus. Eius at provident 
+                        natus? Facilis fugit, quam dolor, amet inventore, temporibus 
+                        minima distinctio impedit ullam quidem assumenda ea.
+                    </P>
+                </div>
             </div>
-            <div class="container" id="c-1b">
-                <p>Tagline</p>
-            </div>
         </div>
-    </header>    
-    <div class="container-fluid" id="c2">
-        <div class="container" id="c-2a">
-            <h1>Login</h1>
-        </div>
-        <div class="container-fluid" id="c-2b">
-            <h1>Signup</h1>
-        </div>
-    </div>
-    <footer class="footer" id="footer">
-        <div class="container" id="f1">
-            <p>
-                COPYRIGHT &copy; | 2024 PRODUCTION
-            </p>
-        </div>
-    </footer>
+    </section>
 </body>
 </html>
